@@ -9,7 +9,7 @@ export class ProductList {
   constructor() { }
 
   getProduct(): Product {
-    return new Product(1, 'Name', 'Description', 8);
+    return new Product(1, 'Lemon', 'Blue', 8);
   }
 
   getProducts(): Array<Product> {
