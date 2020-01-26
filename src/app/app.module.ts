@@ -5,22 +5,24 @@ import { AppComponent } from './app.component';
 import { FirstComponent } from './features/first/first.component';
 import { ProductComponent } from './features/product/product.component';
 
-
+import {CartModule} from '.features/cart/cart.module'; 
 import { ProductModule } from './features/list/product.module';
 import { CartComponent } from './features/cart/cart-component/cart.component';
-
-import { CartModule } from './features/cart/cart.module';
+import { ParentChildComponent } from './features/cart/parent-child.component';
+//import { CartModule } from './features/cart/cart.module';
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
     ProductComponent,
-    CartComponent
+    CartComponent,
    
+
+    ParentChildComponent
   ],
   imports: [
     BrowserModule,
-
+    CartModule,
     ProductModule
   ],
   providers: [],

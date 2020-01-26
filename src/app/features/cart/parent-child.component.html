@@ -1,0 +1,8 @@
+<app-cart-list
+  [carts]="carts"
+  (completeCart)="onCompleteCart($event)">
+</app-cart-list>
+
+<app-cart-component
+  (addCart)="onAddCart($event)">
+</app-cart-component>
