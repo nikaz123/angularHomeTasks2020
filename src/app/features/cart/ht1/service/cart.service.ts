@@ -2,9 +2,7 @@ import { Injectable } from '@angular/core';
 import { Cart } from '../model/cart.model';
 
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class CartService {
   constructor() { }
 
