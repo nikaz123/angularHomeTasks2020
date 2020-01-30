@@ -1,0 +1,12 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Cart</div>
+  <div class="panel-body">
+      <ul>
+          <li>Name: {{cart.name}}</li>
+          <li>Description: {{cart.description}}</li>
+          <li>Price: {{cart.price}}</li>
+          
+      </ul>
+      <button class="btn btn-primary" (click)="onCompleteCart($event)" >Buy</button>
+  </div>
+</div>

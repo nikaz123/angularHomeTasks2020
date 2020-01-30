@@ -1,0 +1,45 @@
+<p>
+Cart List
+</p>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4 class="pannel-title">
+            <span class="glyphicon glyphicon-plus-sign"></span> Add New Product
+        </h4>
+    </div>
+    <div class="panel-body">
+        <form>
+          <div class="form-group">
+            <label for="action">Name</label>
+            <input type="text"
+                class="form-control" id="name"
+                placeholder="Name"
+                #name>
+          </div>
+          <div class="form-group">
+          <label for="action">Description</label>
+          <input type="text"
+              class="form-control" id="description"
+              placeholder="Description"
+              #description>
+        </div>
+         
+          <div class="form-group">
+            <label for="estHours">Price</label>
+            <input type="number"
+                class="form-control" id="price"
+                placeholder="price"
+                #price>
+          </div>
+          <button type="button"
+                  class="btn btn-primary"
+                  (click)='onAddTask({
+                    "name": name.value,
+                    "description": description.value,
+                    "price": price.value});
+                    name.value="";
+                    description.value="";
+                    price.value="";'>Buy</button>
+        </form>
+    </div>
+</div>

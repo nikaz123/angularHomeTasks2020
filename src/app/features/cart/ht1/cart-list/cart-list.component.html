@@ -1,0 +1,5 @@
+<app-cart
+    *ngFor="let cart of carts"
+    [cart]="cart"
+    (completeCart)="onCompleteCart($event)">
+</app-cart>
