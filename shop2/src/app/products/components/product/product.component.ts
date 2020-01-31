@@ -1,14 +1,14 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ProductModel } from 'src/app/products/models/product';
-import { ProductService } from 'src/app/products/services/products.service';
+
 
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
-  styleUrls: ['./product.component.css'],
-  providers: [ProductService]
+  styleUrls: ['./product.component.css']
+  
 })
-/*export class ProductComponent  {
+export class ProductComponent  {
 
   @Input()
   public  product: ProductModel;
@@ -19,8 +19,8 @@ import { ProductService } from 'src/app/products/services/products.service';
 
   public onBuy(): void {
      this.buyProduct.emit(this.product);
-  }*/
-  export class ProductComponent implements OnInit {
+  }
+/*  export class ProductComponent implements OnInit {
     item: ProductModel;
     items: Array<ProductModel>;
       constructor(
@@ -29,5 +29,5 @@ import { ProductService } from 'src/app/products/services/products.service';
       ngOnInit() {
       this.item = this.productService.getProduct();
       this.items = this.productService.getProducts();
-    }
+    }*/
 }
