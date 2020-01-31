@@ -1,10 +1,11 @@
+<div *ngFor="let productModel of productModel">
 <div class="app-product">
-    <p><button (click)="onBuy()" [disabled]="!count">Buy ({{ count }})</button> productName: {{ product?.productName }}</p>
+    <p><button (click)="onBuy()">Buy</button> productName: {{ productModel?.productName }}</p>
     <div>
-      <p>productName: {{ product?.productName }}</p>
-      <p>category: {{ product?.category }}</p>
-      <p>price: {{ product?.price}}</p>
-      <p>description: {{ product?.description }}</p>
-      
+      <p>productName: {{ productModel?.productName }}</p>
+      <p>category: {{ productModel?.category }}</p>
+      <p>price: {{ productModel?.price}}</p>
+      <p>description: {{ productModel?.description }}</p>
     </div>
+  </div>
   </div>
